@@ -13,7 +13,7 @@ body {
 
 .tlo{
     width: 100vw;
-    height: 100vh;
+    paddin-top: 10vh;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -28,6 +28,9 @@ nav{
     font-size: 25px;
     position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1002;
 }
 .img{
     background-image: url("Logo.png");
@@ -212,8 +215,10 @@ a:active{
     nav{
         position: fixed;
         top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1002;
         text-align: center;
-        
     }
 
     .img{
