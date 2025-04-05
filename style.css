@@ -14,6 +14,7 @@ body {
 .tlo{
     width: 100vw;
     min-height: 100vh;
+    height: auto;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -186,7 +187,7 @@ a:active{
         background-image: url("ciemne-tlo-telefon.jpg");
     }
     .tlo{
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0.5);
     }
     
     .container{
