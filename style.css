@@ -8,11 +8,13 @@ body {
     font-family: sans-serif;
     background-image: url("ciemne-tlo.png");
     background-size: cover;
+    background-attachment: fixed;
     color: white;
 }
 
 .tlo{
     width: 100vw;
+    min-height: 100vh;
     paddin-top: 10vh;
     background-color: rgba(0, 0, 0, 0.5);
 }
