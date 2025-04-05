@@ -26,7 +26,8 @@ nav{
     align-items: center;
     margin-right: 10px;
     font-size: 25px;
-
+    position: fixed;
+    top: 0;
 }
 .img{
     background-image: url("Logo.png");
