@@ -210,8 +210,10 @@ a:active{
         top: 1em;
     }
     nav{
-        position: relative;
+        position: fixed;
+        top: 0;
         text-align: center;
+        
     }
 
     .img{
