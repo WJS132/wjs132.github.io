@@ -7,18 +7,18 @@
 body {
     font-family: sans-serif;
     background-image: url("ciemne-tlo.png");
-    background-attachment: scroll;
-    background-position: center;
+    background-size: 100% auto;
     background-repeat: no-repeat;
-    background-size: cover;
-    paddin-top: 10vh;
+    background-position: top;
+    background-attachment: scroll;
     color: white;
 }
 
 .tlo{
+    margin-top: 10vh;
     width: 100vw;
     min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 nav{
@@ -194,7 +194,7 @@ a:active{
         background-image: url("ciemne-tlo-telefon.jpg");
     }
     .tlo{
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.3);
     }
     
     .container{
