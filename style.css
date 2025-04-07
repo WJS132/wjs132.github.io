@@ -46,7 +46,7 @@ nav{
 .tel-button div {
     width: 25px;
     height: 3px;
-    background: white;
+    background: yellow;
 }
 
 .tel-menu {
@@ -119,6 +119,7 @@ nav{
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    color: yellow;
 }
 
 .dropdown-kategoria {
@@ -187,7 +188,7 @@ a:active{
         background-image: url("ciemne-tlo-telefon.jpg");
     }
     .tlo{
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: rgba(0, 0, 0, 0.2);
     }
     
     .container{
