@@ -184,7 +184,7 @@ a:active{
 
 @media (max-width: 500px){
     body{
-        background-image: url("tel2.png");
+        background-image: url("ciemne-tlo-telefon.jpg");
     }
     .tlo{
         background-color: rgba(0, 0, 0, 0.5);
