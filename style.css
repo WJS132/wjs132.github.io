@@ -6,15 +6,22 @@
 
 body {
     font-family: sans-serif;
-    background-image: url("ciemne-tlo.png");
-    background-size: cover;
-    color: white;
+    background-image: url("ciemne-tlo-nieb.jpg");
+    background-size: 100% auto;
+    background-attachment: fixed;
+    position: relative;
+}
+
+span{
+    color: rgba(255, 255, 255, 0);
+    display: none;
 }
 
 .tlo{
     width: 100vw;
     min-height: 100vh;
     height: auto;
+    padding-top: 10vh;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -27,13 +34,31 @@ nav{
     align-items: center;
     margin-right: 10px;
     font-size: 25px;
-
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
 }
+nav a{
+    color: #2579ce;
+    text-shadow: 4px 4px 40px rgba(0, 130, 255, 1);
+}
+nav a:first-of-type{
+    border-right: 3px solid rgba(43, 39, 39, 0.7);
+    margin-right: 3px;
+    padding-right: 10px;
+}
+nav a:last-of-type{
+    border-left: 3px solid rgba(43, 39, 39, 0.7);
+    margin-left: 3px;
+    padding-left: 10px;
+}
+
 .img{
-    background-image: url("Logo.png");
+    background-image: url("Logo-nieb.png");
     background-size: cover;
-    height: 10vh;
-    width: 10vh;
+    height: 9vh;
+    width: 9vh;
 }
 
 .tel-button {
@@ -46,7 +71,7 @@ nav{
 .tel-button div {
     width: 25px;
     height: 3px;
-    background: white;
+    background: linear-gradient(90deg, #0a66c2, #3e7cb1) ;
 }
 
 .tel-menu {
@@ -71,7 +96,7 @@ nav{
     text-decoration: none;
 }
 .tel-img{
-    background-image: url("Logo.png");
+    background-image: url("Logo-nieb.png");
     background-size: cover;
     border: none;
     width: calc(50px + 1.5rem);
@@ -120,9 +145,9 @@ nav{
     flex-direction: column;
     overflow: hidden;
 }
-
 .dropdown-kategoria {
     background-color: rgba(20, 20, 20, 0.8);
+    text-shadow: 4px 4px 30px rgba(0, 130, 255, 1);
     font-size: 20px;
     height: 50px;
     padding: 10px;
@@ -133,10 +158,48 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.dropdown-kategoria::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background-color: #0a66c212;
+    transition: none; 
+    transform: skewX(45deg);
+    transform-origin: center;
+}
+
+.dropdown-kategoria:hover::after {
+    animation: slideIn 0.7s forwards; 
+}
+
+@keyframes slideIn {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 107%;
+    }
+}
+
+.dropdown-kategoria,
+.tel-menu-a {
+    color: #5d9de7;
+}
+.dropdown-kategoria:hover,
+.dropdown-kategoria:hover::before{
+    color: #91d1ff;
 }
 
 .dropdown-kategoria::before {
     content: "▶";
+    color: #7db0eb;
     margin-right: 10px;
     margin-bottom: 1px;
     font-weight: bold;
@@ -169,25 +232,29 @@ nav{
 
 a{
     text-decoration: none;
-    color: rgba(255, 255, 0, 0.95);
     display: flex;
     padding: 5px;
     align-items: center;
     justify-content: center;
     height: 50px;
+    color: #0a66c2;
 }
-a:active{
-    color: rgb(247, 247, 64);
+a:hover{
+    color: #63b3ed;
 }
 
 
 
 @media (max-width: 500px){
+    span{
+        display: flex;
+    }
     body{
-        background-image: url("ciemne-tlo-telefon.jpg");
+        background-image: url("ciemne-tlo-telefon-nieb.jpg");
     }
     .tlo{
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-top: 10vh;
     }
     
     .container{
@@ -210,7 +277,10 @@ a:active{
         top: 1em;
     }
     nav{
-        position: relative;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
         text-align: center;
     }
 
